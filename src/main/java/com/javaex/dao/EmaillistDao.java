@@ -14,7 +14,7 @@ import com.javaex.vo.EmaillistVo;
 
 @Repository
 public class EmaillistDao {
-
+	
 	public void insert(EmaillistVo vo) {
 
 		// 0. import java.sql.*;
@@ -60,10 +60,8 @@ public class EmaillistDao {
 			} catch (SQLException e) {
 				System.out.println("error:" + e);
 			}
-
 		}
 	}
-
 	public List<EmaillistVo> getList() {
 		
 				// 0. import java.sql.*;
@@ -99,10 +97,8 @@ public class EmaillistDao {
 				    	vo.setLastName(lastName);
 				    	vo.setFirstName(firstName);
 				    	vo.setEmail(email);
-				    	eList.add(vo);
-				    					    					    								    	
+				    	eList.add(vo);			    					    								    	
 				    }		    
-				    	
 				} catch (ClassNotFoundException e) {
 				    System.out.println("error: 드라이버 로딩 실패 - " + e);
 				} catch (SQLException e) {
